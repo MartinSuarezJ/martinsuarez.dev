@@ -1,65 +1,102 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+    <main className="min-h-screen bg-white text-gray-900 px-8 py-16">
+      
+      {/* HERO */}
+      <section className="max-w-4xl mx-auto">
+        <h1 className="text-5xl font-bold tracking-tight">
+          Martin Suarez Jaramillo
+        </h1>
+
+        <p className="mt-4 text-xl text-gray-600">
+          Mechanical Engineering • Energy Systems • Computational Modeling
+        </p>
+
+        <p className="mt-6 text-gray-700 leading-relaxed">
+          I build and analyze systems at the intersection of mechanical engineering,
+          sustainable energy, and computational simulation. My work focuses on
+          energy systems, fluid dynamics, and applied modeling for real-world engineering problems.
+        </p>
+
+        <div className="mt-8 flex gap-4">
+          <a href="/projects" className="px-4 py-2 bg-black text-white rounded-lg">
+            View Projects
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a href="https://github.com" className="px-4 py-2 border border-gray-400 rounded-lg">
+            GitHub
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* DIVIDER */}
+      <div className="max-w-4xl mx-auto my-16 border-t" />
+
+      {/* RESEARCH / FOCUS AREAS */}
+      <section className="max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold">Focus Areas</h2>
+
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h3 className="font-medium">Energy Systems</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Modeling renewable and hybrid energy systems with emphasis on efficiency and scalability.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-medium">Fluid & Thermal Systems</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Simulation of fluid dynamics and heat transfer in mechanical systems.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-medium">Computational Engineering</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Numerical methods, simulation tools, and system-level modeling.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DIVIDER */}
+      <div className="max-w-4xl mx-auto my-16 border-t" />
+
+      {/* FEATURED PROJECTS */}
+      <section className="max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold">Selected Work</h2>
+
+        <div className="mt-6 space-y-6">
+          
+          <div className="p-6 border rounded-xl">
+            <h3 className="font-medium">Energy System Simulation Framework</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              A computational model for analyzing multi-source energy systems under dynamic load conditions.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-xl">
+            <h3 className="font-medium">Fluid Flow Optimization Study</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              Numerical analysis of turbulence and flow efficiency in constrained geometries.
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-xl">
+            <h3 className="font-medium">Sustainable Systems Modeling</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              System-level modeling of renewable integration in mechanical infrastructure.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="max-w-4xl mx-auto mt-20 text-sm text-gray-500">
+        Built with Next.js • Engineering Portfolio
+      </footer>
+
+    </main>
   );
 }

@@ -85,7 +85,7 @@ export const projects = [
     des: "Designed to mitigate and harness Pedestrian Level Wind (PLW) to reduce wind tunnels and produce renewable energy.",
     img: "Savonius_Thumbnail.png",
     iconLists: ["/onshape.jpeg", "/ansys.svg", "/solidworks.svg", "/bambulab.svg", "/gobilda.jpeg"],
-    link: "https://docs.google.com/document/d/1eU6xjkdP0gadG0txR5mC16ftd7-qCwiWg1U0MwhKiOw/edit?usp=sharing",
+    link: "https://docs.google.com/document/d/13gGGFJOn8KzLHGHgXjVsXO9oGBXtMkRF7ZYaDgNIy-E/edit?usp=sharing",
   },
   {
     id: 2,

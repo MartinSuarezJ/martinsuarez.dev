@@ -101,7 +101,7 @@ export const projects = [
     des: "Harnessing the power of metal complexes to study a ligand scaffold with one of the fastest recorded carbon capture rates at the molecular level.",
     img: "Carbon_Thumbnail.png",
     iconLists: ["/orca.png", "/agilent.svg", "/rigaku.jpeg"],
-    link: "https://docs.google.com/document/d/1e1xEnnvVu6fRse79MKA5VVj91i01X4a_GLOaqiaSSgQ/edit?usp=sharing",
+    link: "https://docs.google.com/presentation/d/1NOB5Y2Ququw806CmznVgg4qpHZZy0e4o/edit?usp=sharing&ouid=108206482772399038940&rtpof=true&sd=true",
   },
   {
     id: 4,
